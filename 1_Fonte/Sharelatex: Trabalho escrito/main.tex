@@ -1,0 +1,179 @@
+%% ---
+%% Modelo de trabalhos com base nos modelos ABNTEX2, simplificado
+%% Allex Lima - allexlima@unn.edu.br
+%% ----
+
+
+\documentclass[12pt, oneside, a4paper, english, brazil]{abntex2}
+
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{microtype}
+\usepackage{amsmath}
+
+\usepackage[brazilian,hyperpageref]{backref}
+\usepackage[alf]{abntex2cite}
+\graphicspath{ {files/images/} }
+
+%% ---
+%% Dados para CAPA e FOLHA DE ROSTO
+%% ---
+
+\titulo{Fonte de Conversão AC/DC}
+\autor{
+    Allex Lima - 14003147\\
+    Daniel Bispo - 14257165\\
+    Heryck Michael - 14126346\\
+    Paulo Moraes - 12078549\\
+    Renan Barroncas - 14043300
+}
+\orientador{Profº. M.Sc. Francisco Coelho}
+\local{Manaus - AM}
+\data{Novembro de 2016}
+
+\instituicao{
+    Centro Universitário do Norte - UniNorte Laureate\par
+    Escola de Exatas \par
+    Bacharelado em Engenharia da Computação
+}
+
+\preambulo{
+    Relatório apresentado como complemento de entrega do 1º (primeiro) projeto da matéria Eletrônica Analógica e Digital, do Curso de Engenharia da Computação, no Centro Universitário do Norte - UniNorte Laureate.
+    \par
+    \vspace{\onelineskip}
+    \imprimirorientador
+}
+
+\makeindex
+
+\renewcommand{\imprimircapa}{%
+    \begin{capa}%
+        \center
+        \ABNTEXchapterfont\large\textsc{\imprimirinstituicao}
+        \vspace*{1.1cm}
+        \par
+        {\ABNTEXchapterfont\large\imprimirautor}
+        \vfill
+        \begin{center}
+            {\ABNTEXchapterfont\Large\textsc{\imprimirtitulo}}
+        \end{center}
+        \vfill
+        \large\imprimirlocal\
+        \par
+        \large\imprimirdata
+        \vspace*{1cm}
+    \end{capa}
+}
+
+\renewcommand{\imprimirfolhaderosto}{
+    \begin{center}%
+        {\ABNTEXchapterfont\large\imprimirautor}
+
+        \vspace*{\fill}\vspace*{\fill}
+        \begin{center}
+            {\ABNTEXchapterfont\Large\textsc{\imprimirtitulo}}
+        \end{center}
+        \vspace*{\fill}
+
+        \hspace{.45\textwidth}
+        \begin{minipage}{.5\textwidth}
+            \SingleSpacing
+            \imprimirpreambulo
+        \end{minipage}%
+        \vspace*{\fill}
+
+        \large\imprimirlocal
+        \par
+        \large\imprimirdata
+        \vspace*{1cm}
+    \end{center}
+    \newpage
+}
+
+\renewcommand{\ABNTEXchapterfontsize}{\Large}
+\renewcommand{\ABNTEXsubsectionfontsize}{\large}
+
+% Configuração das referências
+\renewcommand{\backrefpagesname}{}
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{}
+
+% Configuração das notas de rodapé
+\renewcommand{\footnotesize}{\small}
+\setlength{\skip\footins}{1.1cm}
+
+\begin{document}
+
+    \selectlanguage{brazil}    %Seleciona o idioma do documento
+    \frenchspacing             %Retira espaço extra obsoleto entre as frases.
+
+    %% ----------------------------------------------------------
+    %% Elementos Pré-textuais
+    %% ----------------------------------------------------------
+
+    %% ---
+    %% Capa e Folha de rosto
+    %% ---
+
+    \imprimircapa
+    \imprimirfolhaderosto
+
+    %% ---
+    %% Abstract e Resumo
+    %% ---
+    %
+    %\begin{resumo}[Abstract]
+    %   \begin{otherlanguage*}{english}
+    %    This is the english abstract.
+    %
+    %    \textbf{Keywords}: latex. abntex. text editoration.
+    % \end{otherlanguage*}
+    %\end{resumo}
+
+    %\begin{resumo} %Resumo
+    %    blablabla...
+    %
+    %    \textbf{Palavras-chave}: bla, bla e bla.
+    %\end{resumo}
+
+    %% ---
+    %% Sumário
+    %% ---
+
+    \pdfbookmark[0]{\contentsname}{toc}
+    \tableofcontents*
+    \cleardoublepage
+
+    % ----------------------------------------------------------
+    % ELEMENTOS TEXTUAIS
+    % ----------------------------------------------------------
+    \textual
+
+    %% ---
+    %% Introdução (exemplo de capítulo sem numeração, mas presente no Sumário)
+    %% ---
+
+    \chapter*[Introdução]{Introdução}
+    \addcontentsline{toc}{chapter}{Introdução}
+        \input{./files/introducao}
+
+    \chapter{Materiais utilizados}
+        \input{./files/materiais}
+
+    \chapter{Metodologia e resultados}
+        \input{./files/metodologia_e_resultados}
+    
+    % ---
+    % Conclusão
+    % ---
+    
+    \chapter*[Conclusão]{Conclusão}
+    \addcontentsline{toc}{chapter}{Conclusão}
+        \input{./files/conclusao}
+
+
+\end{document} 
