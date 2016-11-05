@@ -1,0 +1,11 @@
+Lista de materiais
+
+
+1 Arduino UNO R3 (U1);
+2 LEDs Verdes de 5mm (D1 e D5);
+1 LED Amarelo de 5mm (D2);
+2 LEDs Vermelhos de 5mm (D3 e D4);
+6 Resistores de 100ohm (R2, R3, R4, R5, R6 e R7);
+1 Pushbutton (S1);
+1 Resistor de 10kohm (R1);
+1 Buzzer de 12mm (PIEZO1)
