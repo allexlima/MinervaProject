@@ -7,7 +7,7 @@ class Pedestrian{
             unsigned char buzzer_pin
         );
         bool onPushButton();
-        void active(unsigned int time);
+        void active(unsigned long timer);
 
     private:
         unsigned char led_green;

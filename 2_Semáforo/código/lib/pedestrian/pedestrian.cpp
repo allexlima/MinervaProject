@@ -23,11 +23,11 @@ void pedestrian::alert(){
 }
 
 //default time: 40s
-void Pedestrian::active(unsigned int time = 40000){
+void Pedestrian::active(unsigned long timer = 40000){
     digitalWrite(buzzer, HIGH);
     digitalWrite(led_red, LOW);
     digitalWrite(led_green, HIGH);
-    delay(time);
+    delay(timer);
     deactive();
 }
 
