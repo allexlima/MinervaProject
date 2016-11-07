@@ -14,6 +14,6 @@ class Pedestrian{
         unsigned char led_red;
         unsigned char button;
         unsigned char buzzer;
-        bool button_state;
+        void alert();
         void deactive();
 };

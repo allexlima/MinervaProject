@@ -6,19 +6,34 @@ Pedestrian::Pedestrian(unsigned char led_green_pin = 10, unsigned char led_red_p
     led_red = pinMode(led_red_pin, OUTPUT);
     button = pinMode(button_pin, INPUT);
     buzzer = pinMode(buzzer_pin, OUTPUT);
-
-    button_state = false;
+    digitalWrite(led_red, HIGH);
 }
 
 bool Pedestrian::onPushButton(){
-    button_state = digitalRead(button);
-    return button_state;
+    return (bool) digitalRead(button);
 }
 
-void Pedestrian::active(unsigned int time){
+void pedestrian::alert(){
+    for(unsigned short i = 0; i < 10; i++){
+        digitalWrite(led_green, LOW);
+        delay(300);
+        digitalWrite(led_green, HIGH);
+        delay(300);
+    }
+}
 
+//default time: 40s
+void Pedestrian::active(unsigned int time = 40000){
+    digitalWrite(buzzer, HIGH);
+    digitalWrite(led_red, LOW);
+    digitalWrite(led_green, HIGH);
+    delay(time);
+    deactive();
 }
 
 void Pedestrian::deactive(){
-
+    alert();
+    digitalWrite(buzzer, LOW);
+    digitalWrite(led_green, LOW);
+    digitalWrite(led_red, HIGH);
 }
