@@ -124,3 +124,4 @@ void Pedestrian::deactive(){
     digitalWrite(led_red, HIGH);
     delay(2000);
 }
+
