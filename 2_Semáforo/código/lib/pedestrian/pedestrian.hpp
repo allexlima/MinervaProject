@@ -1,13 +1,13 @@
 class Pedestrian{
     public:
         Pedestrian(
-            unsigned char led_green_pin,
-            unsigned char led_red_pin,
-            unsigned char button_pin,
-            unsigned char buzzer_pin
+            unsigned char led_green_pin=10,
+            unsigned char led_red_pin=11,
+            unsigned char button_pin=12,
+            unsigned char buzzer_pin=13
         );
         bool onPushButton();
-        void active(unsigned long timer);
+        void active(unsigned long timer=10000);
 
     private:
         unsigned char led_green;

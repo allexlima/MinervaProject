@@ -2,15 +2,17 @@
 #include <car.hpp>
 #include <pedestrian.hpp>
 
-car car();
-Pedestrian pedestrian();
+Car car;
+Pedestrian pedestrian;
 
 void setup(){
 }
 
 void loop(){
     car.active();
-    if(pedestrian.onPushButton())
+    if(pedestrian.onPushButton()){
+        delay(5000);
         car.deactive();
         pedestrian.active();
+    }
 }

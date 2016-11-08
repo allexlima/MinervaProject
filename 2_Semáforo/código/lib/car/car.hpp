@@ -1,10 +1,6 @@
 class Car{
     public:
-        Car(
-            unsigned char led_green_pin,
-            unsigned char led_yellow_pin,
-            unsigned char led_red_pin,
-        );
+        Car(unsigned char led_green_pin=2, unsigned char led_yellow_pin=3, unsigned char led_red_pin=4);
         void active();
         void deactive();
 
