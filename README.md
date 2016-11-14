@@ -5,7 +5,7 @@ MinivervaProject é um grupo de subprojetos desenvolvidos na matéria de Eletrô
 #### Projetos :point_down:
 
 1. :zap: Fonte Elétrica com saídas de 12, 9 e 5V (```1_Fonte/```) ~ **Concluído**;
-2. :vertical_traffic_light: Semáforo inteligente com [Arduíno](https://www.arduino.cc/) (```2_Semáforo/```) ~ **Em andamento**;
+2. :vertical_traffic_light: Semáforo inteligente com [Arduíno](https://www.arduino.cc/) (```2_Semáforo/```) ~ **Concluído**;
 
 #### Equipe
 
