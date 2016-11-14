@@ -1,4 +1,4 @@
-![MinivervaProject](https://raw.githubusercontent.com/allexlima/MinervaProject/master/Logo/Minerva.png?token=ADTa5gJ4sYEM0DIkxQqTWM8AXRuxn-2jks5YJ4ydwA%3D%3D)
+![MinivervaProject](https://raw.githubusercontent.com/allexlima/MinervaProject/master/Logo/Minerva.png?token=ADTa5tXmXbDjFDmtDJuCsP6t6ZPGHWQoks5YMzUcwA%3D%3D)
 ## Bem Vindo ao MinivervaProject
 MinivervaProject é um grupo de subprojetos desenvolvidos na matéria de Eletrônica Analógica Digital
 
