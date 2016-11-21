@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Minerva Lamp</string>
+    <string name="project_name">Minerva Project - Challenge III: Lamp Switch</string>
+    <string name="details">No REST Server defined, click to setup</string>
+    <string name="connected_on">Connected on</string>
+    <string name="set_title">Settings</string>
+    <string name="label_server">http://ServerAddress:Port</string>
+    <string name="button">Save</string>
+    <string name="success">Server added successfully!</string>
+</resources>
