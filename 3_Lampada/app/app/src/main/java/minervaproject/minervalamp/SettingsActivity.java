@@ -17,6 +17,7 @@ public class SettingsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
 
         server_input = (TextView) findViewById(R.id.server_inp);
+        server_input.setText(MainActivity.serverAddress);
     }
 
     public void onSave(View view){
