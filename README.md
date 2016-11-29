@@ -6,6 +6,9 @@ MinivervaProject é um grupo de subprojetos desenvolvidos na matéria de Eletrô
 
 1. :zap: Fonte Elétrica com saídas de 12, 9 e 5V (```1_Fonte/```) ~ **Concluído**;
 2. :vertical_traffic_light: Semáforo inteligente com [Arduíno](https://www.arduino.cc/) (```2_Semáforo/```) ~ **Concluído**;
+3. :bulb: Lâmpada (AC) controlada por um Arduino, Relé, Transistors e um servidor WEB (```3_Lampada/```) ~ **Concluído**;
+4. :pager: Display LCD controlada por um controle remoto IR (```3_DisplayIR/```) ~ **Em desenvolvimento**;
+5. :slot_machine: Implementação de portas lógicas usando transistors e arduino (```?```) ~ **Em desenvolvimento**.
 
 #### Equipe
 
